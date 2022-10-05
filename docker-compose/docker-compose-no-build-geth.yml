@@ -35,8 +35,6 @@ services:
       -  ./envs/common-blockscout.env
     environment:
         ETHEREUM_JSONRPC_VARIANT: 'geth'
-        BLOCK_TRANSFORMER: 'clique'
-        ETHEREUM_JSONRPC_HTTP_URL: http://host.docker.internal:8545/
         BLOCK_TRANSFORMER: 'base'
         ETHEREUM_JSONRPC_HTTP_URL: http://172.17.0.1:9658/ext/bc/UABeZkZb1rvutmWVquC2HqCSFoma9C5B4Zhb9ZBayuzj9MBng/rpc
         DATABASE_URL: postgresql://postgres:@host.docker.internal:7432/blockscout?ssl=false
