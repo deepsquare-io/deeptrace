@@ -36,7 +36,6 @@ services:
     environment:
         ETHEREUM_JSONRPC_VARIANT: 'geth'
         BLOCK_TRANSFORMER: 'base'
-        ETHEREUM_JSONRPC_HTTP_URL: http://172.17.0.1:9658/ext/bc/UABeZkZb1rvutmWVquC2HqCSFoma9C5B4Zhb9ZBayuzj9MBng/rpc
         DATABASE_URL: postgresql://postgres:@host.docker.internal:7432/blockscout?ssl=false
         ECTO_USE_SSL: 'false'
         SECRET_KEY_BASE: '56NtB48ear7+wMSf0IQuWDAAazhpb31qyc7GiyspBP2vh7t5zlCsF5QDv76chXeN'
