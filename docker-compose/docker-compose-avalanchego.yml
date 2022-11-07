@@ -53,7 +53,9 @@ services:
     volumes:
       - ./static/images/deepsquare-logo.svg:/app/lib/block_scout_web-4.1.8/priv/static/images/deepsquare-logo.svg:ro
       - ./static/images/favicon.ico:/app/lib/block_scout_web-4.1.8/priv/static/images/favicon.ico:ro
-
+    logging:
+      options:
+        max-size: 1g
   smart-contract-verifier:
     image: ghcr.io/blockscout/smart-contract-verifier:${SMART_CONTRACT_VERIFIER_DOCKER_TAG:-latest}
     restart: always
